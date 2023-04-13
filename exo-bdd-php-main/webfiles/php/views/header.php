@@ -23,7 +23,10 @@
                 <li><a href="#">Nouveau</a></li>
                 <li><a href="#">Business</a></li>
                 <li><a href="#">Beauté</a></li>
-                <li><a href="../login.php">Connexion</a></li>
-                
+                <?php if(!empty($_SESSION) && $_SESSION["connected"] === TRUE){?>
+                <li><a href="../login.php">Deconnexion</a></li>
+                <?php }else{?>
+                    <li><a href="../login.php">Connexion</a></li>
+                <?php }?>
             </ul>
         </nav>

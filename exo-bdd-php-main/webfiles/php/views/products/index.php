@@ -8,6 +8,15 @@
     </header>
     <main>
         <h1>Ventes flash et promotions</h1>
+        <?php if(!empty($_SESSION) && $_SESSION["connected"] === TRUE){?>
+        <form action="./ajout.php" method="POST">
+            <button type="submit">Ajout de produit</button>
+        </form>
+        <?php }
+        else{
+
+        }?>
+        
         <div class="container">
 
 
@@ -41,6 +50,7 @@
                         <input type="hidden" name="id" value="<?php echo $tuple["id"]; ?>">
                         <button type="submit">Modifier</button>
                     </form>
+
                 <?php 
                 }else{
 
