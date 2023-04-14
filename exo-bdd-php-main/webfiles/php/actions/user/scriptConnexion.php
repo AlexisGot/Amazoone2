@@ -7,8 +7,9 @@
         
         $email = $_POST["mail"];
         $password = $_POST["passwrd"];
+        $hashed = hash('md5' , $password);
 
-        $req = "SELECT * FROM users WHERE email='$email' AND pwd='$password'";
+        $req = "SELECT * FROM users WHERE email='$email' AND pwd='$hashed'";
 
         $exec = $conn->query($req);
 

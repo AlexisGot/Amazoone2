@@ -23,6 +23,7 @@
                 <li><a href="#">Nouveau</a></li>
                 <li><a href="#">Business</a></li>
                 <li><a href="#">Beauté</a></li>
+                <li><a href="./inscription.php">Inscription</a></li>
                 <?php if(!empty($_SESSION) && $_SESSION["connected"] === TRUE){?>
                 <li><a href="../login.php">Deconnexion</a></li>
                 <?php }else{?>

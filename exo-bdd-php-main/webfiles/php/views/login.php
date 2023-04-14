@@ -4,3 +4,4 @@
     <input type="password" name="passwrd" placeholder="Mot de passe">
     <button type="submit">Connexion</button>
 </form>
+<button><a href="./products/index.php">Retour en mode Visiteur</a></button>
